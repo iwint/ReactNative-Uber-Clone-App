@@ -19,7 +19,7 @@ export default function Home() {
         <HeaderTabs/>
         <SearchBar/>
         </View>
-        <ScrollView showsHorizontalScrollIndicator={false} >
+        <ScrollView showsVerticalScrollIndicator={false} >
         <Categories/>
         <RestaurantItems />
         </ScrollView>
