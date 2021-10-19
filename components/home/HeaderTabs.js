@@ -33,7 +33,7 @@ export default function HeaderTabs() {
 const HeaderButton=(props)=>(
 <View>
     {<TouchableOpacity style={{
-        backgroundColor: props.activeTab == props.text ? 'black' : 'white',
+        backgroundColor: props.activeTab == props.text ? 'orange' : 'white',
         paddingVertical: 6,
         paddingHorizontal: 16 ,
         borderRadius: 30,

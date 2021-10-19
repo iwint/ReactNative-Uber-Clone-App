@@ -10,8 +10,15 @@ export default function SearchBar() {
             marginTop:15,
             flexDirection:"row"
             }}>
-            <GooglePlacesAutocomplete 
-            placeholder="Search" 
+            <GooglePlacesAutocomplete
+              query={{
+                key: 'AIzaSyBitH5bHPTpFSTtED3dJSvFqYTFZy5G0Pk',
+                language: 'en'
+               
+            }}
+                placeholder="Search"
+                
+              
             styles = {{
                 textInput:{
                     backgroundColor:"#eee",
@@ -29,7 +36,9 @@ export default function SearchBar() {
             }}
             renderLeftButton={()=>(
             <View style={{marginLeft:10}}>
-                <Ionicons name='location-sharp' size={24}/>
+                <Ionicons name='location-sharp' size={24}  style={{
+                    color: "#F7AC30"
+                }} />
             </View>
              ) }
              renderRightButton={()=>( 
@@ -50,6 +59,7 @@ export default function SearchBar() {
                  size={11}
                  style={{
                      marginRight: 6,
+                     color: "#F7AC30"
                  }}
                   />
                 <Text>Search</Text>
